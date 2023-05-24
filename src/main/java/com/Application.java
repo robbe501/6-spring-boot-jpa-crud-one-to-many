@@ -43,9 +43,9 @@ public class Application implements CommandLineRunner {
 		// --------------- CRUD COURSE ------------------
 
 //		// Inserisco corso Full Stack
-//		c.setTitle("Full Stack");
-//		c.setDescription("Web Dev course");
-//		courseService.createCourse(c);
+		c.setTitle("Full Stack");
+		c.setDescription("Web Dev course");
+		courseService.createCourse(c);
 //
 //		// Resetto l'id e inserisco corso SF
 //		c.setCourseId(null);
@@ -68,9 +68,9 @@ public class Application implements CommandLineRunner {
 //		courseService.readCourses().forEach(System.out::println);
 //
 		// --------------- CRUD REVIEW ------------------
-//		r.setCourse(c);
-//		r.setText("Nice course");
-//		reviewService.createReview(r);
+		r1.setCourse(c);
+		r1.setText("Nice course");
+		reviewService.createReview(r1);
 //
 //		r.setReviewId(null);
 //		r.setText("Good course");
@@ -84,10 +84,7 @@ public class Application implements CommandLineRunner {
 //
 //		reviewService.updateReview(r);
 //
-//		// TO-DO
-//		// 1 - NON FUNZIONA LA DELETE
-//		// 2 - IN ReviewVO HO TOLTO Course
-//		reviewService.deleteReview(3);
+//		reviewService.deleteReview(1);
 //
 		// --------------- CRUD COURSE REVIEW ------------------
 //		reviewService.readReviews().forEach(System.out::println);
